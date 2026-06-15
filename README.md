@@ -1,4 +1,4 @@
-# Commentary Demo Reviews
+# Branch Markdown Demo
 
-Curated public sample review repository for Commentary demos.
+Open `runbooks/customer-escalation.md` directly from the `demo/branch-markdown` branch.
 
