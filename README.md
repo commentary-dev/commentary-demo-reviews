@@ -1,4 +1,4 @@
 # Commentary Demo Reviews
 
-Curated public sample review repository for Commentary demos.
+This branch contains the PR Markdown sample for Commentary demos.
 
