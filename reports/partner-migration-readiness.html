@@ -5,14 +5,21 @@
     <title>Partner Migration Readiness</title>
     <style>
       body { font-family: Inter, Arial, sans-serif; margin: 0; color: #172033; background: #f7f9fc; }
-      main { max-width: 980px; margin: 0 auto; padding: 40px 24px; }
+      main { max-width: 1060px; margin: 0 auto; padding: 40px 24px; }
       header, section { background: #fff; border: 1px solid #d8e0ea; border-radius: 8px; padding: 22px; margin-bottom: 18px; }
       h1, h2 { margin-top: 0; }
       table { width: 100%; border-collapse: collapse; }
-      th, td { border-bottom: 1px solid #e5ebf2; padding: 10px; text-align: left; }
+      th, td { border-bottom: 1px solid #e5ebf2; padding: 10px; text-align: left; vertical-align: top; }
       .risk { color: #a13d2d; font-weight: 700; }
       .ready { color: #11683d; font-weight: 700; }
       .callout { border-left: 4px solid #0969da; padding-left: 14px; color: #405064; }
+      .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+      .metric { border: 1px solid #e5ebf2; border-radius: 8px; padding: 14px; background: #f8fbff; }
+      .metric strong { display: block; font-size: 1.45rem; color: #0f4b8f; }
+      .timeline { display: grid; gap: 12px; padding-left: 20px; }
+      .owner-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .owner-card { border: 1px solid #e5ebf2; border-radius: 8px; padding: 14px; }
+      @media (max-width: 760px) { .metrics, .owner-grid { grid-template-columns: 1fr; } }
     </style>
   </head>
   <body>
@@ -20,23 +27,54 @@
       <header>
         <p class="ready">Generated readiness report</p>
         <h1>Partner Migration Readiness</h1>
-        <p>Review the generated migration plan before sending it to implementation and customer success teams.</p>
+        <p>Review the generated migration plan before sending it to implementation, support, and customer success teams.</p>
       </header>
       <section>
         <h2>Executive summary</h2>
-        <p>The migration can proceed after owners confirm rollback messaging, support coverage, and billing-plan communication.</p>
-        <p class="callout">Commentary HTML Review should make this report readable while keeping source inspection close by.</p>
+        <p>The migration can proceed after owners confirm rollback messaging, support coverage, billing-plan communication, and customer-success staffing for the first two waves.</p>
+        <p class="callout">Commentary HTML Review should make this generated report readable while keeping source inspection and review threads close by.</p>
+      </section>
+      <section aria-labelledby="readiness-score">
+        <h2 id="readiness-score">Readiness score</h2>
+        <div class="metrics">
+          <div class="metric"><strong>82%</strong><span>Implementation complete</span></div>
+          <div class="metric"><strong>14</strong><span>Partner accounts in wave one</span></div>
+          <div class="metric"><strong>3</strong><span>Open launch blockers</span></div>
+          <div class="metric"><strong>24h</strong><span>Rollback support window</span></div>
+        </div>
       </section>
       <section>
         <h2>Risk register</h2>
         <table>
-          <thead><tr><th>Risk</th><th>Owner</th><th>Status</th></tr></thead>
+          <thead><tr><th>Risk</th><th>Owner</th><th>Status</th><th>Reviewer prompt</th></tr></thead>
           <tbody>
-            <tr><td>Billing plan copy implies immediate renewal changes</td><td>Product</td><td class="risk">Needs review</td></tr>
-            <tr><td>Support fallback script is incomplete</td><td>Support</td><td class="risk">Needs owner</td></tr>
-            <tr><td>API migration steps match implementation branch</td><td>Engineering</td><td class="ready">Ready</td></tr>
+            <tr><td>Billing plan copy implies immediate renewal changes</td><td>Product</td><td class="risk">Needs review</td><td>Does this language match the billing system?</td></tr>
+            <tr><td>Support fallback script is incomplete</td><td>Support</td><td class="risk">Needs owner</td><td>Can a frontline rep answer the first ticket?</td></tr>
+            <tr><td>API migration steps match implementation branch</td><td>Engineering</td><td class="ready">Ready</td><td>Verify job names against the deployment runbook.</td></tr>
+            <tr><td>Customer success staffing covers EMEA launch morning</td><td>Success</td><td class="risk">Needs confirmation</td><td>Name the launch-room owner before publish.</td></tr>
           </tbody>
         </table>
+      </section>
+      <section>
+        <h2>Owner review</h2>
+        <div class="owner-grid">
+          <article class="owner-card">
+            <h3>Product</h3>
+            <p>Confirm renewal language, pricing caveats, and whether plan changes apply immediately or at the next renewal.</p>
+          </article>
+          <article class="owner-card">
+            <h3>Support</h3>
+            <p>Prepare a first-response macro that explains static HTML sandboxing, provider access, and rollback ownership.</p>
+          </article>
+          <article class="owner-card">
+            <h3>Engineering</h3>
+            <p>Verify migration jobs, audit logging, and a disable path that does not delete existing review threads.</p>
+          </article>
+          <article class="owner-card">
+            <h3>Customer success</h3>
+            <p>Schedule launch-room coverage and identify customers whose private repositories need OAuth verification before rollout.</p>
+          </article>
+        </div>
       </section>
       <section>
         <h2>Launch checklist</h2>
@@ -44,9 +82,19 @@
           <li>Confirm rollback owner and customer-facing language.</li>
           <li>Attach support FAQ to the migration ticket.</li>
           <li>Verify the generated report uses current account limits.</li>
+          <li>Review the HTML report in Commentary Preview and Raw modes.</li>
+          <li>Confirm that blocked active content indicators are expected for generated scripts.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Wave timeline</h2>
+        <ol class="timeline">
+          <li><strong>Day 0:</strong> Send partner notice, verify repository access, and open the review room.</li>
+          <li><strong>Day 1:</strong> Enable wave-one accounts and monitor support tickets hourly.</li>
+          <li><strong>Day 3:</strong> Review anchor quality, comment sync state, and adoption feedback.</li>
+          <li><strong>Day 5:</strong> Decide whether to expand, hold, or roll back.</li>
         </ol>
       </section>
     </main>
   </body>
 </html>
-
