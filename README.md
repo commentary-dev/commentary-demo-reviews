@@ -1,4 +1,4 @@
-# Commentary Demo Reviews
+# Commentary Support Brain
 
-Curated public sample review repository for Commentary demos.
+This branch is an OKF-style Knowledge Brain sample for Commentary.
 
