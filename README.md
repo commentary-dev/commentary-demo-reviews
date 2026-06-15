@@ -1,4 +1,4 @@
-# Commentary Demo Reviews
+# Presentation Mode Demo
 
-Curated public sample review repository for Commentary demos.
+Open `presentations/launch-narrative.md` with `present=1`.
 
