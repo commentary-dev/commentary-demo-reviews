@@ -1,4 +1,4 @@
-# Commentary Demo Reviews
+# Marp Demo
 
-Curated public sample review repository for Commentary demos.
+This branch contains a Marp deck for Commentary slide review.
 
