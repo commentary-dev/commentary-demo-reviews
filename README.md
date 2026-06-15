@@ -1,4 +1,4 @@
-# Commentary Demo Reviews
+# HTML Review Demo
 
-Curated public sample review repository for Commentary demos.
+This branch contains a static generated report for Commentary HTML Review.
 

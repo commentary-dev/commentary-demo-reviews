@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Partner Migration Readiness</title>
+    <style>
+      body { font-family: Inter, Arial, sans-serif; margin: 0; color: #172033; background: #f7f9fc; }
+      main { max-width: 980px; margin: 0 auto; padding: 40px 24px; }
+      header, section { background: #fff; border: 1px solid #d8e0ea; border-radius: 8px; padding: 22px; margin-bottom: 18px; }
+      h1, h2 { margin-top: 0; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { border-bottom: 1px solid #e5ebf2; padding: 10px; text-align: left; }
+      .risk { color: #a13d2d; font-weight: 700; }
+      .ready { color: #11683d; font-weight: 700; }
+      .callout { border-left: 4px solid #0969da; padding-left: 14px; color: #405064; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="ready">Generated readiness report</p>
+        <h1>Partner Migration Readiness</h1>
+        <p>Review the generated migration plan before sending it to implementation and customer success teams.</p>
+      </header>
+      <section>
+        <h2>Executive summary</h2>
+        <p>The migration can proceed after owners confirm rollback messaging, support coverage, and billing-plan communication.</p>
+        <p class="callout">Commentary HTML Review should make this report readable while keeping source inspection close by.</p>
+      </section>
+      <section>
+        <h2>Risk register</h2>
+        <table>
+          <thead><tr><th>Risk</th><th>Owner</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Billing plan copy implies immediate renewal changes</td><td>Product</td><td class="risk">Needs review</td></tr>
+            <tr><td>Support fallback script is incomplete</td><td>Support</td><td class="risk">Needs owner</td></tr>
+            <tr><td>API migration steps match implementation branch</td><td>Engineering</td><td class="ready">Ready</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Launch checklist</h2>
+        <ol>
+          <li>Confirm rollback owner and customer-facing language.</li>
+          <li>Attach support FAQ to the migration ticket.</li>
+          <li>Verify the generated report uses current account limits.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
+
