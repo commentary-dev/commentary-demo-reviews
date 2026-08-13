@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Partner Migration Readiness</title>
+    <style>
+      body { font-family: Inter, Arial, sans-serif; margin: 0; color: #172033; background: #f7f9fc; }
+      main { max-width: 1060px; margin: 0 auto; padding: 40px 24px; }
+      header, section { background: #fff; border: 1px solid #d8e0ea; border-radius: 8px; padding: 22px; margin-bottom: 18px; }
+      h1, h2 { margin-top: 0; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { border-bottom: 1px solid #e5ebf2; padding: 10px; text-align: left; vertical-align: top; }
+      .risk { color: #a13d2d; font-weight: 700; }
+      .ready { color: #11683d; font-weight: 700; }
+      .callout { border-left: 4px solid #0969da; padding-left: 14px; color: #405064; }
+      .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+      .metric { border: 1px solid #e5ebf2; border-radius: 8px; padding: 14px; background: #f8fbff; }
+      .metric strong { display: block; font-size: 1.45rem; color: #0f4b8f; }
+      .timeline { display: grid; gap: 12px; padding-left: 20px; }
+      .owner-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .owner-card { border: 1px solid #e5ebf2; border-radius: 8px; padding: 14px; }
+      figure { margin: 0; }
+      figure img { display: block; width: 100%; height: auto; border: 1px solid #d8e0ea; border-radius: 8px; }
+      figcaption { margin-top: 10px; color: #526174; }
+      .workflow-svg { display: block; width: 100%; height: auto; margin-top: 18px; border: 1px solid #d8e0ea; border-radius: 8px; background: #f8fbff; }
+      @media (max-width: 760px) { .metrics, .owner-grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="ready">Generated readiness report</p>
+        <h1>Partner Migration Readiness</h1>
+        <p>Review the generated migration plan before sending it to implementation, support, and customer success teams.</p>
+      </header>
+      <section>
+        <h2>Executive summary</h2>
+        <p>The migration can proceed after owners confirm rollback messaging, support coverage, billing-plan communication, and customer-success staffing for the first two waves.</p>
+        <p class="callout">Commentary HTML Review should make this generated report readable while keeping source inspection and review threads close by.</p>
+      </section>
+      <section aria-labelledby="readiness-score">
+        <h2 id="readiness-score">Readiness score</h2>
+        <div class="metrics">
+          <div class="metric"><strong>82%</strong><span>Implementation complete</span></div>
+          <div class="metric"><strong>14</strong><span>Partner accounts in wave one</span></div>
+          <div class="metric"><strong>3</strong><span>Open launch blockers</span></div>
+          <div class="metric"><strong>24h</strong><span>Rollback support window</span></div>
+        </div>
+      </section>
+      <section aria-labelledby="visual-review">
+        <h2 id="visual-review">Visual review targets</h2>
+        <p>Activate visual annotation and select a rectangular region. Reviewers can zoom into the dashboard, comment on a specific risk cell, or identify an unclear ownership handoff without altering the underlying artifact.</p>
+        <figure>
+          <img src="./assets/release-dashboard.png" alt="Fictional release operations dashboard with workflow, risk, trend, and status regions">
+          <figcaption>Suggested targets: the blocked timeline item, critical risk cells, and the aging-items panel.</figcaption>
+        </figure>
+        <svg class="workflow-svg" viewBox="0 0 800 360" role="img" aria-labelledby="inline-workflow-title inline-workflow-desc">
+          <title id="inline-workflow-title">Partner migration handoff</title>
+          <desc id="inline-workflow-desc">A three-stage handoff from product approval to engineering migration and support readiness, with an unresolved ownership gap before launch.</desc>
+          <rect x="24" y="24" width="752" height="312" rx="18" fill="#f8fbff" stroke="#cbd5e1" stroke-width="3"></rect>
+          <rect x="60" y="98" width="190" height="128" rx="14" fill="#eff6ff" stroke="#2563eb" stroke-width="4"></rect>
+          <text x="155" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172033">Product</text>
+          <text x="155" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#405064">Approve scope</text>
+          <path d="M250 162 H305" stroke="#64748b" stroke-width="5"></path>
+          <path d="M294 150 L310 162 L294 174" fill="none" stroke="#64748b" stroke-width="5"></path>
+          <rect x="310" y="98" width="190" height="128" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="4"></rect>
+          <text x="405" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172033">Engineering</text>
+          <text x="405" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#405064">Run migration</text>
+          <path d="M500 162 H555" stroke="#dc2626" stroke-width="6" stroke-dasharray="12 8"></path>
+          <path d="M544 150 L560 162 L544 174" fill="none" stroke="#dc2626" stroke-width="5"></path>
+          <rect x="560" y="98" width="180" height="128" rx="14" fill="#f0fdf4" stroke="#16a34a" stroke-width="4"></rect>
+          <text x="650" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#172033">Support</text>
+          <text x="650" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#405064">Cover launch</text>
+          <rect x="500" y="252" width="238" height="54" rx="12" fill="#fff1f2" stroke="#fb7185" stroke-width="3"></rect>
+          <text x="619" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#9f1239">Ownership gap: annotate here</text>
+        </svg>
+        <p class="callout">The SVG above is intentionally inline and static. The source-backed workflow is also available as <a href="./assets/review-workflow.svg">a standalone SVG artifact</a>.</p>
+      </section>
+      <section>
+        <h2>Risk register</h2>
+        <table>
+          <thead><tr><th>Risk</th><th>Owner</th><th>Status</th><th>Reviewer prompt</th></tr></thead>
+          <tbody>
+            <tr><td>Billing plan copy implies immediate renewal changes</td><td>Product</td><td class="risk">Needs review</td><td>Does this language match the billing system?</td></tr>
+            <tr><td>Support fallback script is incomplete</td><td>Support</td><td class="risk">Needs owner</td><td>Can a frontline rep answer the first ticket?</td></tr>
+            <tr><td>API migration steps match implementation branch</td><td>Engineering</td><td class="ready">Ready</td><td>Verify job names against the deployment runbook.</td></tr>
+            <tr><td>Customer success staffing covers EMEA launch morning</td><td>Success</td><td class="risk">Needs confirmation</td><td>Name the launch-room owner before publish.</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Owner review</h2>
+        <div class="owner-grid">
+          <article class="owner-card">
+            <h3>Product</h3>
+            <p>Confirm renewal language, pricing caveats, and whether plan changes apply immediately or at the next renewal.</p>
+          </article>
+          <article class="owner-card">
+            <h3>Support</h3>
+            <p>Prepare a first-response macro that explains static HTML sandboxing, provider access, and rollback ownership.</p>
+          </article>
+          <article class="owner-card">
+            <h3>Engineering</h3>
+            <p>Verify migration jobs, audit logging, and a disable path that does not delete existing review threads.</p>
+          </article>
+          <article class="owner-card">
+            <h3>Customer success</h3>
+            <p>Schedule launch-room coverage and identify customers whose private repositories need OAuth verification before rollout.</p>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Launch checklist</h2>
+        <ol>
+          <li>Confirm rollback owner and customer-facing language.</li>
+          <li>Attach support FAQ to the migration ticket.</li>
+          <li>Verify the generated report uses current account limits.</li>
+          <li>Review the HTML report in Commentary Preview and Raw modes.</li>
+          <li>Confirm that blocked active content indicators are expected for generated scripts.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Wave timeline</h2>
+        <ol class="timeline">
+          <li><strong>Day 0:</strong> Send partner notice, verify repository access, and open the review room.</li>
+          <li><strong>Day 1:</strong> Enable wave-one accounts and monitor support tickets hourly.</li>
+          <li><strong>Day 3:</strong> Review anchor quality, comment sync state, and adoption feedback.</li>
+          <li><strong>Day 5:</strong> Decide whether to expand, hold, or roll back.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
