@@ -29,6 +29,35 @@ Review Copilot sample deck for launch, support, and demo readiness.
 
 ---
 
+## Annotate a dashboard region
+
+Activate visual annotation, zoom into the dashboard, and select the blocked timeline item, a critical risk cell, or an aging-items bar.
+
+![Fictional release operations dashboard with workflow, risk, trend, and review status regions](../assets/release-dashboard.png)
+
+---
+
+## Annotate a source-backed workflow
+
+Select the ownership handoff between Render and Review or the dashed rollback path. SVG source remains available in Raw.
+
+![Release review workflow with a highlighted rollback path](../assets/review-workflow.svg)
+
+---
+
+## Review the lifecycle
+
+```mermaid
+flowchart LR
+  Source[Visual source] --> Render[Safe render]
+  Render --> Region[Select region]
+  Region --> Thread[Review thread]
+  Thread --> Change[Apply change]
+  Change -. verify or roll back .-> Render
+```
+
+---
+
 ## Launch gates
 
 | Gate | Owner | State |
@@ -54,6 +83,14 @@ Review Copilot sample deck for launch, support, and demo readiness.
 - GitHub Pages routes must serve real app content at `/`, `/settings/billing`, `/usage`, and `/checkout`.
 - The Live Preview SDK must load without exposing secrets.
 - Demo comments should sound like real implementation feedback.
+
+---
+
+## Repeated occurrence check
+
+This is the same SVG source used earlier. A marker created here should stay on this occurrence rather than appearing on both slides.
+
+![Repeated release review workflow for occurrence-specific marker verification](../assets/review-workflow.svg)
 
 ---
 
