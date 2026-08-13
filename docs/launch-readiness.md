@@ -17,6 +17,40 @@ Ship to the first three design partners after support receives the fallback lang
 | Live Preview Review | Needs final demo validation | GitHub Pages sample must load in Commentary and expose SDK status. |
 | Draft and Brainstorming Reviews | Ready for preview | Resettable samples must show realistic agent handoff comments. |
 
+## Visual review walkthrough
+
+Activate visual annotation, drag a rectangle around a specific part of an image or diagram, and submit the normal review comment. Use Fit and zoom controls to inspect detail without turning the review into a drawing tool.
+
+### Operations dashboard
+
+Annotate the blocked red timeline item, the critical cells in the risk matrix, or the aging panel that needs an explicit owner.
+
+![Fictional release operations dashboard with workflow, risk, trend, and review status regions](../assets/release-dashboard.png)
+
+### Source-backed workflow
+
+The SVG remains available in Raw while Preview supports region comments. Try annotating the dashed rollback route or the ownership handoff between Render and Review.
+
+![Release review workflow with a highlighted rollback path](../assets/review-workflow.svg)
+
+The same source appears again below. A comment on this occurrence should not place a marker on the occurrence above.
+
+![Repeated release review workflow used to verify occurrence-specific markers](../assets/review-workflow.svg)
+
+### Mermaid lifecycle
+
+```mermaid
+flowchart LR
+  Intake[Repository intake] --> Detect[Detect visual artifact]
+  Detect --> Render[Render safe preview]
+  Render --> Annotate[Select a review region]
+  Annotate --> Discuss[Discuss in a thread]
+  Discuss --> Resolve[Apply and verify change]
+  Resolve -. rollback if verification fails .-> Render
+```
+
+The same diagram is also available as a [standalone Mermaid artifact](../diagrams/release-flow.mmd) so Raw and Preview behavior can be reviewed independently.
+
 ## Reviewer experience
 
 Reviewers should see a document-first workspace with file navigation, compact review state, and comments tied to the text they are actually reading. The raw diff is still available, but it should feel like a supporting tool instead of the main surface.
