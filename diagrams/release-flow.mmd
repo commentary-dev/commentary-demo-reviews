@@ -1,0 +1,8 @@
+flowchart LR
+  Intake[Repository intake] --> Detect[Detect visual artifact]
+  Detect --> Render[Render safe preview]
+  Render --> Annotate[Select a review region]
+  Annotate --> Discuss[Discuss in a thread]
+  Discuss --> Resolve[Apply and verify change]
+  Resolve -. rollback if verification fails .-> Render
+
