@@ -14,7 +14,7 @@ Review Copilot helps teams review AI-assisted documents as documents before they
 
 ## First-response checklist
 
-- Identify the surface: Markdown PR, branch document, Draft Review, Brainstorming Review, Static HTML, Knowledge Brain, or Live Preview Review.
+- Identify the surface: Markdown PR, branch document, Draft Review, review with Consensus, Static HTML, Knowledge Brain, or Live Preview Review.
 - Confirm whether the reviewer is signed in and whether provider access is still valid.
 - Ask for the Commentary review route, not raw repository credentials or private customer content.
 - Check whether refresh or re-anchoring has already run.

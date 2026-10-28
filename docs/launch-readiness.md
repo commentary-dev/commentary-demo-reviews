@@ -1,5 +1,7 @@
 # Launch readiness review
 
+This is a fictional launch scenario for practicing review. Review Copilot is an example product, not an announced Commentary feature.
+
 ## Executive summary
 
 Review Copilot is ready for a controlled rollout to documentation-heavy teams that already use Commentary for rendered Markdown reviews. The launch should emphasize that reviewers start from the rendered artifact, then move to raw, diff, provider, or presentation views only when those tools answer a specific question.
@@ -14,8 +16,19 @@ Ship to the first three design partners after support receives the fallback lang
 | --- | --- | --- |
 | Rendered Markdown review | Ready | Keep rendered view as the default PR entry point. |
 | Static HTML review | Ready with sandbox language | Support must explain why scripts are blocked. |
-| Live Preview Review | Needs final demo validation | GitHub Pages sample must load in Commentary and expose SDK status. |
-| Draft and Brainstorming Reviews | Ready for preview | Resettable samples must show realistic agent handoff comments. |
+| Live Preview Review | Needs final wording review | Billing and checkout must agree on when a plan change takes effect. |
+| Draft review with Consensus | Pending decision | Assign the escalation owner before accepting the rollout plan. |
+
+## Acceptance criteria
+
+- Product confirms the pilot scope and names the person who makes the launch decision.
+- Operations names the rollback owner, the stop condition, and the evidence from a rollback check.
+- Support verifies the customer FAQ against the release memo.
+- A reviewer inspects the exact revision and records acceptance; an agent completion report alone is insufficient.
+
+## Compare the proposal
+
+Start in Document to read the current launch plan. Switch to Changes and choose All PR changes to compare the proposal with the base branch. Keep Preview selected to read the rendered changes, or use Raw when exact source matters. Compare the launch decision and rollback criteria before deciding whether the proposal is ready.
 
 ## Visual review walkthrough
 
@@ -60,8 +73,8 @@ launch_gate:
   owner: product
   required_checks:
     - support_faq_reviewed
-    - live_preview_sample_embeds
-    - demo_reset_manifest_current
+    - billing_and_checkout_verified
+    - acceptance_matches_revision
     - rollback_owner_named
 ```
 
@@ -75,6 +88,6 @@ Support should capture the review route, provider, surface type, and latest refr
 
 - Confirm the rollback owner is named in customer-facing copy.
 - Add one screenshot of the rendered review shell to the FAQ.
-- Verify the GitHub Pages Live Preview sample renders inside Commentary before the reset workflow publishes a new share link.
+- Verify the billing and checkout wording against the proposed customer announcement.
 - Make sure support can explain why raw diffs remain available but secondary.
-- Check that every demo route uses representative content rather than fixture-only prose.
+- Record the human launch decision against the exact revision after checking the evidence.

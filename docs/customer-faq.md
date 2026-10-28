@@ -19,7 +19,7 @@ Public PRs can be opened read-only without sign-in. Commenting, replies, refresh
 | Markdown PR | Docs, release notes, FAQs, runbooks | Rendered prose and source context stay together. |
 | Static HTML | Generated reports or exported pages | The page is readable while active content stays sandboxed. |
 | Draft Review | Pre-Git memos or customer copy | Teams can comment before creating a branch. |
-| Brainstorming Review | Plans that need consensus | Objections, accepted constraints, and owner decisions stay visible. |
+| review with Consensus | Plans that need consensus | Objections, accepted constraints, and owner decisions stay visible. |
 | Live Preview Review | Interactive frontend previews | Comments attach to selected UI elements with route and viewport context. |
 
 ## Who should use the preview first?
