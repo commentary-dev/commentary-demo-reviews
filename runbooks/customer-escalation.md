@@ -6,7 +6,7 @@ Use this path when a customer reports that review comments are missing, attached
 
 ## First response
 
-Confirm whether the customer is reviewing a public PR, a private PR, a branch document, a Draft Review, a Brainstorming Review, a Static HTML report, a Knowledge Brain, or a Live Preview Review. Ask for the Commentary route and the visible error state. Do not ask for raw access tokens, raw private repository URLs, screenshots with customer content, or copied private Markdown.
+Confirm whether the customer is reviewing a public PR, a private PR, a branch document, a Draft Review, a review with Consensus, a Static HTML report, a Knowledge Brain, or a Live Preview Review. Ask for the Commentary route and the visible error state. Do not ask for raw access tokens, raw private repository URLs, screenshots with customer content, or copied private Markdown.
 
 ## Triage checklist
 
