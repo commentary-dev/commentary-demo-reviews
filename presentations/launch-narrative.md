@@ -1,5 +1,7 @@
 # Review Copilot Launch Narrative
 
+Fictional product scenario: Review Copilot is used here to practice launch review.
+
 ## The problem
 
 AI-generated documents are being reviewed as raw diffs even when the decision depends on reading flow, accuracy, stakeholder language, and whether the final artifact makes sense outside a code review.
@@ -14,7 +16,7 @@ Commentary opens the rendered document first, keeps source tools nearby, and anc
 
 - Rendered Markdown review for PRs and branches.
 - Static HTML review for generated reports.
-- Draft and Brainstorming Reviews for app-native workflows before or beside Git.
+- Draft and reviews with Consensus for app-native workflows before or beside Git.
 - Live Preview Reviews for selected UI elements in opted-in browser previews.
 - Agent handoff through bounded, untrusted review context.
 
@@ -32,4 +34,4 @@ Approve a controlled rollout for documentation-heavy teams with support coverage
 
 ## Decision
 
-Launch after the support FAQ, customer memo, migration report, Live Preview sample, and resettable review records pass review.
+Launch after reviewers verify the support FAQ, customer memo, migration report, billing preview, and rollback evidence against the acceptance criteria.
