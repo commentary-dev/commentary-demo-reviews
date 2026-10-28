@@ -7,6 +7,8 @@ theme: default
 
 # Launch Readiness Review
 
+Fictional product scenario: Review Copilot is used here to practice launch review.
+
 Review Copilot sample deck for launch, support, and demo readiness.
 
 ---
@@ -24,7 +26,7 @@ Review Copilot sample deck for launch, support, and demo readiness.
 
 1. Rendered Markdown review.
 2. Static HTML report review.
-3. Draft and Brainstorming Reviews.
+3. Draft and reviews with Consensus.
 4. Live Preview element comments.
 
 ---
@@ -65,7 +67,7 @@ flowchart LR
 | Support FAQ reviewed | Support | In review |
 | Static HTML report approved | Product | Ready |
 | GitHub Pages Live Preview embeds | Engineering | Needs validation |
-| Demo reset manifest current | Growth | Pending reset |
+| Rollback owner and stop condition named | Operations | Pending verification |
 
 ---
 
@@ -74,7 +76,7 @@ flowchart LR
 1. Open a Markdown PR and review the rendered launch brief.
 2. Move to the HTML migration report and inspect Preview plus Raw.
 3. Open the Live Preview sample and comment on a billing control.
-4. Show Draft and Brainstorming Reviews as agent-ready app-native records.
+4. Show Draft and reviews with Consensus as agent-ready app-native records.
 
 ---
 
